@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    margin: None;
+}
+
+body {
+    background-color: #525324;
+    color: white;
+}
+
+button{
+    border-radius: 15px;
+}
+
+#botaoHomeAlmoco{
+    background-image: url("https://th.bing.com/th/id/R.b4f6eb17c3ed9a1d1cb324a7550aed7d?rik=dwi1Jet9E62tcw&pid=ImgRaw&r=0");
+}
+
+#botaoHomeJantar{
+    background-image: url("https://th.bing.com/th/id/R.1a3253e23715fd76cb78fa0fbcc786ce?rik=D0YyjQ3FY0EGqg&pid=ImgRaw&r=0");
+}
+
+#botaoHomeSobremesas{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpUFrC9k99qS3MqBOm0tEPk2ChxAXovY6qcw&s");
+}
+
+#botaoHomeBebidas{
+    background-image: url("https://www.brotasbar.com.br/wp/wp-content/uploads/2017/10/pratos-brotas-bar-10-348x270.jpg");
+}
+
+.linksHome{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.botaoHome{
+    width: 300px;
+    height: 150px;
+    
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    transition: background-size 0.3s ease-in-out;
+
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,  
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.botaoHome:hover{
+    background-size: 140%;
+}
+
+#mainHome{
+    background-color: white;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+}
+
+.containerMain{
+    display: block;
+    border-radius: 0px;
+    width: 100vw;
+    margin-left: 0;
+    background-color: white;
+
+    padding: 20px;
+}
+
+.container{
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    color: black;
+}
+
+img{
+    width: 100%;
+    height: 80vh;
+
+    border: none;
+}

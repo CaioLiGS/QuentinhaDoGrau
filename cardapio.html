@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentinha_do_Grau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/Banner.jpg">
+    </header>
+
+    <div class="caixaExterna">
+        <div class="links">
+            <button onclick="AlterarItens('almoco', 'botaoCardapioalmoco')" id="botaoCardapioalmoco">
+                <img src="https://guibon.com.br/wp-content/uploads/2019/04/POST_FRANGO_GRELHADO.png" alt="Descrição da imagem">
+                Almoço
+                
+            </button>
+            <button onclick="AlterarItens('jantar', 'botaoCardapiojantar')" id="botaoCardapiojantar">
+                <img src="https://img.freepik.com/fotos-premium/salmao-grelhado-com-aspargos-frescos-e-pure-de-batatas-em-um-prato-comida-saudavel-em-cima-da-mesa_230432-792.jpg" alt="">
+                Jantar
+            </button>
+            <button onclick="AlterarItens('bebidas', 'botaoCardapiobebidas')" 
+            id="botaoCardapiobebidas" >
+                <img src="https://img.freepik.com/fotos-premium/jarra-de-suco-de-laranja-e-frutas-laranja-com-folhas-verdes_80510-1088.jpg" alt="">
+                Bebidas
+            </button>
+            <button onclick="AlterarItens('sobremesas', 'botaoCardapiosobremesas')" id="botaoCardapiosobremesas">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ437ktz9bR0qcAksAvjrA0C5TiZXsWcTd7IA&s" alt="">
+                Sobremesas
+            </button>
+        </div>
+    
+        <main>
+    
+            <!-- 1° Alimento -->
+            <div class="alimento" id="alimento1">
+                <img id="alimento1Imagem" src="https://instadelivery.com.br/9f6d0a12762cea0252ee2a2c03d11b29.png">
+                <div class="descricao">
+                    <div class="titulo">
+                        <h3 id="alimento1Nome" class="NomeAlimento">Filé de frango grelhado com legumes.</h3>
+                        <p id="alimento1Preco" class="preco">12.99</p>
+                    </div>
+                    <button onclick="AdicionarItemAoCarrinho('alimento1')">Adicionar</button>
+                    
+                </div>
+            </div>
+
+            <!-- 2° Alimento -->
+            <div class="alimento" id="alimento2">
+                <img id="alimento2Imagem" src="https://instadelivery.com.br/9f6d0a12762cea0252ee2a2c03d11b29.png">
+                <div class="descricao">
+                    <div class="titulo">
+                        <h3 id="alimento2Nome" class="NomeAlimento">Filé de frango grelhado com legumes.</h3>
+                        <p id="alimento2Preco" class="preco">12.99</p>
+                    </div>
+                    <button onclick="AdicionarItemAoCarrinho('alimento2')">Adicionar</button>
+                    
+                </div>
+            </div>
+
+            <!-- 3° Alimento -->
+            <div class="alimento" id="alimento3">
+                <img id="alimento3Imagem" src="https://instadelivery.com.br/9f6d0a12762cea0252ee2a2c03d11b29.png">
+                <div class="descricao">
+                    <div class="titulo">
+                        <h3 id="alimento3Nome" class="NomeAlimento">Filé de frango grelhado com legumes.</h3>
+                        <p id="alimento3Preco" class="preco">12.99</p>
+                    </div>
+                    <button onclick="AdicionarItemAoCarrinho('alimento3')">Adicionar</button>
+                    
+                </div>
+            </div>
+
+            <!-- 4° Alimento -->
+            <div class="alimento" id="alimento4">
+                <img id="alimento4Imagem" src="https://instadelivery.com.br/9f6d0a12762cea0252ee2a2c03d11b29.png">
+                <div class="descricao">
+                    <div class="titulo">
+                        <h3 id="alimento4Nome" class="NomeAlimento">Filé de frango grelhado com legumes.</h3>
+                        <p id="alimento4Preco" class="preco">12.99</p>
+                    </div>
+                    <button onclick="AdicionarItemAoCarrinho('alimento4')">Adicionar</button>
+                    
+                </div>
+            </div>
+
+            <!-- 5° Alimento -->
+            <div class="alimento" id="alimento5">
+                <img id="alimento5Imagem" src="https://instadelivery.com.br/9f6d0a12762cea0252ee2a2c03d11b29.png">
+                <div class="descricao">
+                    <div class="titulo">
+                        <h3 id="alimento5Nome" class="NomeAlimento">Filé de frango grelhado com legumes.</h3>
+                        <p id="alimento5Preco" class="preco">12.99</p>
+                    </div>
+                    <button onclick="AdicionarItemAoCarrinho('alimento5')">Adicionar</button>
+                    
+                </div>
+            </div>
+
+            <!-- 6° Alimento -->
+            <div class="alimento" id="alimento6">
+                <img id="alimento6Imagem" src="https://instadelivery.com.br/9f6d0a12762cea0252ee2a2c03d11b29.png">
+                <div class="descricao">
+                    <div class="titulo">
+                        <h3 id="alimento6Nome" class="NomeAlimento">Filé de frango grelhado com legumes.</h3>
+                        <p id="alimento6Preco" class="preco">12.99</p>
+                    </div>
+                    <button onclick="AdicionarItemAoCarrinho('alimento6')">Adicionar</button>
+                    
+                </div>
+            </div>
+
+        </main>
+
+        <div class="carrinho">
+
+            <p id="QuantidadeDeItens">Quantidade de itens: 0</p>
+
+            <button id="ExpandirRecolherCarrinho" onclick="ExpandirRecolherCarrinho()">
+                <img src="https://cdn-icons-png.freepik.com/512/60/60992.png" alt="">
+                Visualizar carrinho
+            </button>
+
+            <div id="ItensDoCarrinho">
+
+            </div>
+
+            <div class="PrecoTotalCarrinho">
+                <p id="ParagrafoPrecoTotalCarrinho">Preço total: 0</p>
+    
+                <button onclick="finalizarCompra()">Finalizar compra</button>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    
+</body>
+<script src="main.js"></script>
+</html>
